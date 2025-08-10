@@ -158,7 +158,9 @@
                     <p class="text-gray-700">Ser reconocidos como la academia líder en enseñanza de inglés, destacando por nuestra excelencia académica, innovación pedagógica y compromiso con el éxito de nuestros estudiantes.</p>
                 </div>
                 <div class="md:w-1/2 fade-in">
-                    <!-- Image removed as requested -->
+                    <div class="bg-blue-100 p-12 rounded-lg flex items-center justify-center h-full">
+                        <i class="fas fa-chalkboard-teacher text-blue-800 text-6xl"></i>
+                    </div>
                 </div>
             </div>
             
@@ -284,22 +286,12 @@
                     <p class="italic mb-4">"La plataforma online es muy fácil de usar y los ejercicios interactivos hacen que aprender sea divertido. Nunca pensé que disfrutaría tanto estudiando inglés."</p>
                     <p class="font-bold">- Sofía T., Estudiante Intermedio</p>
                 </div>
-                
-                <!-- Additional testimonial -->
-                <div class="testimonial-slide p-8 bg-blue-800 rounded-lg shadow-lg text-center">
-                    <div class="flex justify-center mb-6">
-                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Estudiante" class="w-16 h-16 rounded-full object-cover">
-                    </div>
-                    <p class="italic mb-4">"El test de nivel me ayudó a identificar mis fortalezas y debilidades. Ahora estoy en el curso perfecto para mis necesidades."</p>
-                    <p class="font-bold">- Juan P., Estudiante Principiante</p>
-                </div>
             </div>
             
             <div class="flex justify-center mt-8 space-x-2">
                 <button class="testimonial-dot w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none" data-slide="0"></button>
                 <button class="testimonial-dot w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none" data-slide="1"></button>
                 <button class="testimonial-dot w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none" data-slide="2"></button>
-                <button class="testimonial-dot w-3 h-3 rounded-full bg-white opacity-50 focus:outline-none" data-slide="3"></button>
             </div>
         </div>
     </section>
@@ -404,7 +396,7 @@
                             </li>
                             <li class="flex items-start">
                                 <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
-                                <li class="flex items-start">
+                                                      <li class="flex items-start">
                                 <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
                                 <span>Material de preparación específico</span>
                             </li>
@@ -511,25 +503,21 @@
                 <div class="md:w-1/2 fade-in">
                     <div class="bg-white p-8 rounded-lg shadow-lg">
                         <h3 class="text-2xl font-bold text-blue-800 mb-6">Reserva tu clase personalizada</h3>
-                        
-                        <form id="private-class-form" class="space-y-4" action="https://formsubmit.co/mrenglishacademy@hotmail.com" method="POST">
-                            <input type="hidden" name="_subject" value="Nueva solicitud de clase privada">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_next" value="#private">
-                            
+                                                
+                        <form id="private-class-form" class="space-y-4">
                             <div>
                                 <label for="name" class="block text-gray-700 mb-2">Nombre completo</label>
-                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                             </div>
                             
                             <div>
                                 <label for="email" class="block text-gray-700 mb-2">Correo electrónico</label>
-                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                             </div>
                             
                             <div>
                                 <label for="level" class="block text-gray-700 mb-2">Nivel de inglés</label>
-                                <select id="level" name="level" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <select id="level" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                                     <option value="">Selecciona tu nivel</option>
                                     <option value="beginner">Principiante (A1-A2)</option>
                                     <option value="intermediate">Intermedio (B1-B2)</option>
@@ -540,7 +528,7 @@
                             
                             <div>
                                 <label for="objective" class="block text-gray-700 mb-2">Objetivo de las clases</label>
-                                <select id="objective" name="objective" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <select id="objective" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                                     <option value="">Selecciona tu objetivo</option>
                                     <option value="conversation">Mejorar conversación</option>
                                     <option value="work">Inglés para trabajo</option>
@@ -553,7 +541,7 @@
                             
                             <div>
                                 <label for="availability" class="block text-gray-700 mb-2">Disponibilidad</label>
-                                <textarea id="availability" name="availability" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Indica tus horarios preferidos (mañanas, tardes, fines de semana)"></textarea>
+                                <textarea id="availability" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Indica tus horarios preferidos (mañanas, tardes, fines de semana)"></textarea>
                             </div>
                             
                             <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-4 rounded transition duration-300">
@@ -566,7 +554,7 @@
                 <div class="md:w-1/2 fade-in">
                     <div class="bg-white p-8 rounded-lg shadow-lg h-full">
                         <h3 class="text-2xl font-bold text-blue-800 mb-6">Beneficios de las clases privadas</h3>
-                        
+                                                
                         <ul class="space-y-4">
                             <li class="flex items-start">
                                 <div class="bg-blue-100 p-2 rounded-full mr-4">
@@ -590,7 +578,7 @@
                             
                             <li class="flex items-start">
                                 <div class="bg-blue-100 p-2 rounded-full mr-4">
-                                    <i class="fas fa-bullse-eye text-blue-800"></i>
+                                    <i class="fas fa-bullseye text-blue-800"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-blue-900">Enfoque específico</h4>
@@ -608,7 +596,7 @@
                                 </div>
                             </li>
                         </ul>
-                        
+                                                
                         <div class="mt-8 bg-blue-100 p-4 rounded-lg">
                             <h4 class="font-bold text-blue-900 mb-2">¿Cómo funcionan las clases?</h4>
                             <p class="text-gray-700">1. Completa el formulario de reserva<br>
@@ -616,7 +604,7 @@
                             3. Recibirás un enlace para la clase virtual<br>
                             4. ¡Comienza tu aprendizaje personalizado!</p>
                         </div>
-                        
+                                                
                         <!-- Interview Evaluation Info -->
                         <div class="mt-8 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
                             <h4 class="font-bold text-blue-900 mb-2">¿Necesitas prepararte para una entrevista?</h4>
@@ -660,11 +648,11 @@
                             <div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full" style="width: 5%"></div>
                         </div>
                     </div>
-                    
+                                    
                     <div id="question-container" class="mb-8">
                         <!-- Questions will be inserted here by JavaScript -->
                     </div>
-                    
+                                    
                     <div class="flex justify-between">
                         <button id="prev-question" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded transition duration-300 hidden">
                             Anterior
@@ -697,49 +685,43 @@
                 <div class="md:w-1/2">
                     <div class="bg-white text-gray-800 p-8 rounded-lg shadow-lg">
                         <h3 class="text-2xl font-bold text-blue-800 mb-6">Formulario de contacto</h3>
-                        
-                        <form id="contact-form" action="https://formsubmit.co/mrenglishacademy@hotmail.com" method="POST">
-                            <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_next" value="#contact">
-                            
-                            <div class="space-y-4">
-                                <div>
-                                    <label for="contact-name" class="block text-gray-700 mb-2">Nombre completo</label>
-                                    <input type="text" id="contact-name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                                </div>
-                                
-                                <div>
-                                    <label for="contact-email" class="block text-gray-700 mb-2">Correo electrónico</label>
-                                    <input type="email" id="contact-email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                                </div>
-                                
-                                <div>
-                                    <label for="contact-phone" class="block text-gray-700 mb-2">Teléfono (opcional)</label>
-                                    <input type="tel" id="contact-phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                </div>
-                                
-                                <div>
-                                    <label for="contact-subject" class="block text-gray-700 mb-2">Asunto</label>
-                                    <select id="contact-subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                                        <option value="">Selecciona un asunto</option>
-                                        <option value="information">Solicitar información</option>
-                                        <option value="registration">Inscripción a cursos</option>
-                                        <option value="private">Clases privadas</option>
-                                        <option value="interview">Evaluación de entrevistas</option>
-                                        <option value="other">Otro</option>
-                                    </select>
-                                </div>
-                                
-                                <div>
-                                    <label for="contact-message" class="block text-gray-700 mb-2">Mensaje</label>
-                                    <textarea id="contact-message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
-                                </div>
-                                
-                                <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-4 rounded transition duration-300">
-                                    Enviar Mensaje
-                                </button>
+                                                
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="contact-name" class="block text-gray-700 mb-2">Nombre completo</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                             </div>
+                            
+                            <div>
+                                <label for="contact-email" class="block text-gray-700 mb-2">Correo electrónico</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            
+                            <div>
+                                <label for="contact-phone" class="block text-gray-700 mb-2">Teléfono (opcional)</label>
+                                <input type="tel" id="contact-phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            
+                            <div>
+                                <label for="contact-subject" class="block text-gray-700 mb-2">Asunto</label>
+                                <select id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="information">Solicitar información</option>
+                                    <option value="registration">Inscripción a cursos</option>
+                                    <option value="private">Clases privadas</option>
+                                    <option value="interview">Evaluación de entrevistas</option>
+                                    <option value="other">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="contact-message" class="block text-gray-700 mb-2">Mensaje</label>
+                                <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-4 rounded transition duration-300">
+                                Enviar Mensaje
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -747,7 +729,7 @@
                 <div class="md:w-1/2">
                     <div class="bg-blue-800 p-8 rounded-lg shadow-lg h-full">
                         <h3 class="text-2xl font-bold mb-6">Información de contacto</h3>
-                        
+                                                
                         <div class="space-y-6">
                             <div class="flex items-start">
                                 <div class="bg-blue-700 p-3 rounded-full mr-4">
@@ -775,7 +757,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold">Correo electrónico</h4>
-                                    <p>Moisesmalonzo2@gmail.com</p>
+                                    <p>mrenglishacademy@hotmail.com</p>
                                 </div>
                             </div>
                             
@@ -790,14 +772,14 @@
                                 </div>
                             </div>
                         </div>
-                        
+                                                
                         <div class="mt-8">
                             <h4 class="font-bold mb-4">Contáctanos directamente por WhatsApp</h4>
                             <a href="https://wa.me/18099243085" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
                                 <i class="fab fa-whatsapp text-xl mr-2"></i> Chatear por WhatsApp
                             </a>
                         </div>
-                        
+                                                
                         <div class="mt-8">
                             <h4 class="font-bold mb-4">Síguenos en redes sociales</h4>
                             <div class="flex space-x-4">
@@ -823,7 +805,7 @@
 
     <!-- Map Section -->
     <div class="h-96 w-full">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.715138978348!2d-69.86566572463648!3d18.46652688256653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf87932a2d8f8d%3A0xede8f511ac5b7449!2sMalec%C3%B3n%20de%20la%20Av.%20Espa%C3%B1a!5e0!3m2!1sen!2sus!4v1689877238902!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.715138978348!2d-69.86566572463648!3d18.46852688256653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf87932a2d8f8d%3A0xede8f511ac5b7449!2sMalec%C3%B3n%20de%20la%20Av.%20Espa%C3%B1a!5e0!3m2!1sen!2sus!4v1689877238902!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- Footer -->
@@ -837,7 +819,7 @@
                     </div>
                     <p class="text-blue-300 max-w-md">La mejor academia de inglés con métodos modernos y profesores comprometidos para ayudarte a alcanzar tus metas lingüísticas.</p>
                 </div>
-                
+                                
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
                     <div>
                         <h4 class="text-lg font-bold mb-4">Enlaces rápidos</h4>
@@ -848,7 +830,7 @@
                             <li><a href="#private" class="text-blue-300 hover:text-yellow-400 transition">Clases Privadas</a></li>
                         </ul>
                     </div>
-                    
+                                    
                     <div>
                         <h4 class="text-lg font-bold mb-4">Legal</h4>
                         <ul class="space-y-2">
@@ -857,17 +839,17 @@
                             <li><a href="#" class="text-blue-300 hover:text-yellow-400 transition">Política de cookies</a></li>
                         </ul>
                     </div>
-                    
+                                    
                     <div>
                         <h4 class="text-lg font-bold mb-4">Contacto</h4>
                         <ul class="space-y-2">
                             <li class="flex items-center">
                                 <i class="fas fa-phone-alt text-yellow-400 mr-2"></i>
-                                <span>+1 809 924 3085</span>
+                                <span>8099243085</span>
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-envelope text-yellow-400 mr-2"></i>
-                                <span>info@mrenglishacademy.com</span>
+                                <span>mrenglishacademy@hotmail.com</span>
                             </li>
                         </ul>
                     </div>
@@ -876,7 +858,7 @@
             
             <div class="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-blue-300 mb-4 md:mb-0">© 2023 Mr English Academy. Todos los derechos reservados.</p>
-                
+                                
                 <div class="flex space-x-4">
                     <a href="#" class="text-blue-300 hover:text-yellow-400 transition">
                         <i class="fab fa-facebook-f"></i>
@@ -913,16 +895,16 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+                                
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+                                
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+                                    
                     // Close mobile menu if open
                     if (!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
@@ -939,7 +921,7 @@
         function showSlide(index) {
             testimonialSlides.forEach(slide => slide.classList.remove('active'));
             testimonialDots.forEach(dot => dot.classList.remove('opacity-100'));
-            
+                        
             testimonialSlides[index].classList.add('active');
             testimonialDots[index].classList.add('opacity-100');
             currentSlide = index;
@@ -1185,15 +1167,15 @@
         
         function showQuestion(index) {
             const question = testQuestions[index];
-            
+                        
             // Update progress
             progressBar.style.width = `${((index + 1) / testQuestions.length) * 100}%`;
             progressText.textContent = `${index + 1}/${testQuestions.length}`;
-            
+                        
             // Update navigation buttons
             prevButton.classList.toggle('hidden', index === 0);
             nextButton.textContent = index === testQuestions.length - 1 ? 'Finalizar' : 'Siguiente';
-            
+                        
             // Display question
             questionContainer.innerHTML = `
                 <h4 class="text-xl font-bold text-blue-900 mb-6">${question.question}</h4>
@@ -1207,14 +1189,14 @@
                     `).join('')}
                 </div>
             `;
-            
+                        
             // Add event listeners to radio buttons
             document.querySelectorAll('input[name="answer"]').forEach(radio => {
                 radio.addEventListener('change', (e) => {
                     userAnswers[index] = parseInt(e.target.value);
                 });
             });
-            
+                        
             // Pre-select if already answered
             if (userAnswers[index] !== null) {
                 document.getElementById(`option-${userAnswers[index]}`).checked = true;
@@ -1234,7 +1216,7 @@
             if (selectedOption) {
                 userAnswers[currentQuestion] = parseInt(selectedOption.value);
             }
-            
+                        
             if (currentQuestion < testQuestions.length - 1) {
                 currentQuestion++;
                 showQuestion(currentQuestion);
@@ -1247,7 +1229,7 @@
         function calculateResults() {
             testContainer.classList.add('hidden');
             testResults.classList.remove('hidden');
-            
+                        
             // Calculate score
             let score = 0;
             for (let i = 0; i < testQuestions.length; i++) {
@@ -1255,11 +1237,11 @@
                     score++;
                 }
             }
-            
+                        
             // Determine level
             let level, description, recommendation;
             const percentage = (score / testQuestions.length) * 100;
-            
+                        
             if (percentage < 30) {
                 level = "A1 - Principiante";
                 description = "Tienes un conocimiento básico del inglés. Puedes entender y usar expresiones cotidianas y frases muy básicas.";
@@ -1277,7 +1259,7 @@
                 description = "Tienes un excelente dominio del inglés. Puedes expresarte espontáneamente, con fluidez y precisión, y entender una amplia gama de textos exigentes.";
                 recommendation = "Nuestras Clases Privadas te permitirán perfeccionar aspectos específicos del idioma o prepararte para exámenes avanzados.";
             }
-            
+                        
             resultLevel.textContent = level;
             resultDescription.textContent = description;
             resultRecommendation.innerHTML = `<strong>Recomendación:</strong> ${recommendation}`;
@@ -1285,31 +1267,25 @@
         
         // Form submissions
         document.getElementById('private-class-form').addEventListener('submit', function(e) {
-            // FormSubmit will handle the submission
-            // Show confirmation message
-            setTimeout(() => {
-                alert('Gracias por tu reserva. Nos pondremos en contacto contigo pronto para confirmar los detalles de tu clase privada.');
-                this.reset();
-            }, 1000);
+            e.preventDefault();
+            alert('Gracias por tu reserva. Nos pondremos en contacto contigo pronto para confirmar los detalles de tu clase privada.');
+            this.reset();
         });
         
         document.getElementById('contact-form').addEventListener('submit', function(e) {
-            // FormSubmit will handle the submission
-            // Show confirmation message
-            setTimeout(() => {
-                alert('Gracias por tu mensaje. Nos pondremos en contacto contigo lo antes posible.');
-                this.reset();
-            }, 1000);
+            e.preventDefault();
+            alert('Gracias por tu mensaje. Nos pondremos en contacto contigo lo antes posible.');
+            this.reset();
         });
         
         // Scroll reveal animation
         function animateOnScroll() {
             const elements = document.querySelectorAll('.fade-in');
-            
+                        
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
                 const screenPosition = window.innerHeight / 1.3;
-                
+                                
                 if (elementPosition < screenPosition) {
                     element.style.opacity = '1';
                 }
